@@ -1,0 +1,275 @@
+@import url("https://use.typekit.net/ukg8rqr.css");
+
+html {scroll-behavior: smooth;}
+body{margin:0;padding:0;font-family:'aller', sans-serif;color:#161616;}
+.navbar-custom{background-color:transparent;z-index:1000;}
+.navbar-stick.fixed-top{background-color:#fff;box-shadow:3px 3px 15px rgb(0,0,0,0.2);}
+.navbar-custom .container .navbar-brand .logo{width:200px}
+.navbar-scroll .container .navbar-brand .logo{width:180px}
+.navbar-custom .active a{color:#0085c7!important;}
+#menu-principal .current-menu-item::after {background:#0085c7;width:100%;height:2px;display:block;content:'';}
+#menu-principal .nav-link {color:#0084c6;text-transform:uppercase;}
+#menu-principal .nav-link:hover {color:#0085c7;}
+#menu-principal .menu-item {margin-left:1rem;}
+#menu-principal li:hover::after{width:100%;transition:width .3s;}
+#menu-principal li::after{
+    content:'';
+    display:block;
+    width:0;
+    height:2px;
+    background:#0085c7;
+    transition:width .3s;
+}
+
+a:hover {opacity:0.9;text-decoration:none;}
+
+body main {margin-top:-88px;}
+body main.navbar-stick {margin-top:3px;}
+
+.btn:focus, .btn.focus {box-shadow:none!important;outline:none!important;}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color:#ffd101;
+    background-color:#e65026;
+    border-color:unset;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color:#ffd101;
+    background-color:#e65026;
+    border-color:unset;
+}
+.btn {
+  transition: all .2s ease-in-out;
+}
+.btn:hover{
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+.btn-primary {
+  color:#fff;
+  background-color:#00c734;
+  padding:15px 65px;
+  border-radius:9px;
+  border:0;
+}
+
+.wt {color:#fff;}
+.blue {color:#0085c7;}
+.bg-blue {background-color:#0085c7;}
+
+
+/* ---- Footer ---- */
+
+#footer .rodape .logo .logo-foot {width:280px;}
+#footer .rodape .contato .tel {font-size:1.8rem;}
+#footer .rodape .social .icon {width:42px;margin-left:0.6rem;transition:.2s;}
+#footer .rodape .social .icon:hover {transform:scale(1.2);transition:.2s;}
+#footer .rodape .contato .list-group .list-group-item {background-color:transparent;}
+
+
+
+/* ---- Home ---- */
+
+#home .topo {
+  height:1080px;
+  background:url('../../assets/img/topo-principal.jpg') no-repeat center;
+}
+
+#home .topo .container {padding-top:12%}
+#home .topo h1 {
+  color: #fff;
+  width: 80%;
+  font-weight: bold;
+  text-shadow: 3px 3px 9px rgb(0,0,0,.3);
+}
+#home .topo .saibamais {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: block;
+}
+#home .topo .btn-banner {
+  background: #2ccae3;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#home .topo .box {
+  width: 75%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+#home .topo .box h2 {
+  font-weight: bold;
+  color: #0085c6;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+#home .topo .box h3 {
+  color: #2ccae3;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+#home .tratamentos h2 {
+  color: #0085c6;
+  font-weight: bold;
+}
+#home .tratamentos h3 {
+  font-size: 1.4rem;
+  color: #2ccae3;
+  font-weight: 100;
+}
+#home .tratamentos .outros {font-size:2rem;}
+#home .tratamentos .box {
+  -webkit-box-shadow: 0px 20px 30px -10px rgba(100,211,232,1);
+  -moz-box-shadow: 0px 20px 30px -10px rgba(100,211,232,1);
+  box-shadow: 0px 20px 30px -10px rgba(100,211,232,1);
+  border-radius:20px;
+  display:grid;
+  width:fit-content
+}
+#home .tratamentos h4 {
+  text-align: center;
+  color: #2ccae2;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 260px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding-bottom:10px;
+}
+#home .tratamentos .box .btn-primary {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  left: 10%;
+}
+#home .tratamentos h4 span {display:block;font-size:14px;font-weight:100;}
+#home .tratamentos ul {list-style-image: url('../../assets/img/icon-dental.png');}
+#home .tratamentos ul li {line-height:2;margin-bottom:10px;}
+
+#home .conheca h2 {width:360px;font-weight:bold;}
+#home .conheca p {font-weight:200;}
+#home .conheca .dentista {font-size:1.2rem;}
+#home .conheca .btn-primary:hover{background-color:#2ccae2;}
+
+#home .form-footer .box {border-radius:12px;box-shadow:6px 6px 15px rgb(0,0,0,0.2)}
+#home .form-footer .box h2 {text-transform:uppercase;color:#0084c7;}
+#home .form-footer .box p {text-transform:uppercase;color:#2ccae3;}
+
+/*#home .form-footer .box .wpcf7-form {display: flex;}*/
+#home .form-footer .box .wpcf7-form .row {margin-right:9px;}
+#home .form-footer .box .wpcf7-form .wpcf7-text {
+  width: 100%;
+  border: 1px solid #c7e7ec;
+  padding: 14px;
+  border-radius: 9px;
+  color: #0084c6;
+}
+#home .form-footer .box .wpcf7-form select{
+  width: 100%;
+  border: 1px solid #c7e7ec;
+  padding: 14px;
+  border-radius: 9px;
+  color: #0084c6;
+}
+#home .form-footer .box .wpcf7-form .wpcf7-submit{
+  width: 100%;
+  color: #fff;
+  background-color: #00c734;
+  padding: 15px 65px;
+  border-radius: 9px;
+  border: 0;
+}
+#home .form-footer .box .wpcf7-form .wpcf7-response-output {
+  position: absolute;
+  bottom: 50px;
+}
+
+#home .topo .wpcf7-form .wpcf7-text {
+  width: 100%;
+  border: 1px solid #c7e7ec;
+  padding: 12px;
+  border-radius: 9px;
+  color: #0084c6;
+}
+#home .topo .wpcf7-form select{
+  width: 100%;
+  border: 1px solid #c7e7ec;
+  padding: 12px;
+  border-radius: 9px;
+  color: #0084c6 !important;
+}
+
+#home .topo .wpcf7-form .wpcf7-submit {
+  width: 100%;
+  color: #fff;
+  background-color: #00c734;
+  padding: 15px 65px;
+  border-radius: 9px;
+  border: 0;
+}
+
+#home .wpcf7-form input::placeholder {
+  color: #0084c6 !important;
+  opacity:0.6;
+}
+
+#home .topo .wpcf7-form .wpcf7-response-output {margin:10px;}
+
+#home .mapa .over {
+  position: absolute;
+  right: 80px;
+  margin-top: 35px;
+}
+
+#tratamentos, #conheca, #onde {margin-top:-150px;padding-top:150px;}
+
+
+/* HAMBURGUER MENU MOBILE TO X */
+
+.navbar-custom .sidebarBtn{border:0;}
+.navbar-custom .sidebarBtn span{display: block;width: 35px;height: 3px;background: #008fc3;position: absolute;top: 30px;transition: .3s;right: 20px;}
+.navbar-custom .sidebarBtn span::before{content: '';position: absolute;top: -10px;background: #008fc3;left: 0;width: 100%;height: 3px;}
+.navbar-custom .sidebarBtn span::after{content: '';position: absolute;top: 10px;background: #008fc3;left: 0;width: 100%;height: 3px;}
+.sidebarBtn.toggle span{background: transparent;transition: .3s;}
+.sidebarBtn.toggle span::before{top: 0;transform: rotate(45deg);transition: .3s;}
+.sidebarBtn.toggle span::after{top: 0;transform: rotate(-45deg);transition: .3s;}
+.navbar-custom button:focus{outline: none;box-shadow: none;}
+
+
+
+/* ---- Mobile ---- */
+
+@media (max-width: 480px){
+  .navbar-custom {background-color:#fff;}
+  #home .topo {height:800px;text-align:center;}
+  #home .topo h1 {font-size:1.5rem;text-align:center;width:100%;}
+  #home .topo .container {padding-top:120px;}
+  #home .topo .box {width:100%;padding:1.5rem!important;text-align:center;margin-top:2rem;}
+  #home .topo .wpcf7-form .wpcf7-submit, #home .form-footer .box .wpcf7-form .wpcf7-submit
+  {padding: 15px 65px 15px 90px;background: url(../../assets/img/icon-wapp.png) no-repeat 41px 12px #00c734;}
+  #home .tratamentos .box {
+    margin-bottom: 4rem;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #home .tratamentos .box img {width:100%;}
+  #home .tratamentos .box h4 {position:absolute;right:10%;left:10%;}
+  #home .tratamentos .container .py-5 {padding-bottom:1rem!important;padding-top:1rem!important;}
+  #home .tratamentos .outros {text-align:center!important;}
+  #home .tratamentos .box .btn-primary {padding:15px;}
+  #home .conheca {text-align:center;}
+  #home .conheca h2 {margin-top:1.8rem;width:auto;}
+  #home .mapa {text-align:center;}
+  #home .mapa .over {position:static;}
+  #home .form-footer .box h2 {font-size:1.8rem;}
+  #home .form-footer .box .wpcf7-form .row {margin-right:0;}
+  #home .form-footer .box {padding:1.5rem!important;}
+  #home .form-footer .box .wpcf7-form {display:block;}
+}
